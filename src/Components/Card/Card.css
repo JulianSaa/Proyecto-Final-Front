@@ -1,8 +1,10 @@
 .cardcontainer{
     display:  flex;
+    justify-content: center;
 }
 
 .card{
     width: 18rem;
     flex-wrap: wrap;
+    
 }

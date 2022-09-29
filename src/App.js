@@ -25,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/store" element={UserProvider.admin === '1' ? <Store /> : <Home /> } />
+          {/* <Route path='/store' element={<Store />}/> */}
           <Route path='*' element={<Error />}/>
         </Routes>
         <Footer />

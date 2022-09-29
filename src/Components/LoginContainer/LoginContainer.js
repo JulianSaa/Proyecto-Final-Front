@@ -8,7 +8,6 @@ const LoginContainer = () => {
     const [password, setPassword] = useState('')
     const onClick = (e) => {
         e.preventDefault()
-        // console.log(name, password)
         onLogin(name, password)
         
     }

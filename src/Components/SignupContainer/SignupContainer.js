@@ -11,7 +11,6 @@ const SignupContainer = () => {
 
     const onClick = (e) => {
         e.preventDefault()
-        // console.log(name, password)
         onSignup(name, surname, email, password)
     }
 

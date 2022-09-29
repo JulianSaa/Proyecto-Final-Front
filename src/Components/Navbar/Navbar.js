@@ -23,6 +23,9 @@ const Navbar = () => {
                             <li className="nav-item mt-2 ">
                                 <Link className="nav-link active text-dark" aria-current="page" to="/">Inicio</Link>
                             </li>
+                            <li className="nav-item mt-2">
+                                <Link className="nav-link" to="/store">Admin</Link>
+                            </li>
                         </ul>
                         <form className="d-flex">
                             <input type="text" className="form-control me-3" aria-describedby="emailHelp" placeholder='Search' />
