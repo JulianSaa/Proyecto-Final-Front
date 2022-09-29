@@ -3,8 +3,8 @@ import LoginContainer from '../../Components/LoginContainer/LoginContainer'
 
 const login = () => {
   return (
-    <div>
-        <LoginContainer />
+    <div className='container mt-5 p-5'>
+      <LoginContainer />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -15,18 +15,18 @@ const Navbar = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             
                             <li className="nav-item mt-2">
-                                <Link className="nav-link" to="/login/signup">Sign Up</Link>
+                                <Link className="nav-link" to="/signup">Sign Up</Link>
                             </li>
                             <li className="nav-item mt-2" >
                                 <Link className="nav-link" to="/login/">Log in</Link>
                             </li>
-                            <li className="nav-item mt-2">
+                            <li className="nav-item mt-2 ">
                                 <Link className="nav-link active text-dark" aria-current="page" to="/">Inicio</Link>
                             </li>
                         </ul>
                         <form className="d-flex">
                             <input type="text" className="form-control me-3" aria-describedby="emailHelp" placeholder='Search' />
-                            <button className="btn btn-outline-success" type="submit">Busqueda</button>
+                            <button className="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>

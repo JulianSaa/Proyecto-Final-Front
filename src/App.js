@@ -1,19 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Navbar from './Components/Navbar/index';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
 import Login from './Pages/Login';
-import { useContext } from 'react';
-import { Context } from './Store/AppContext';
+import Signup from './Pages/Signup';
+import Error from './Pages/Error'
+import Store from './Pages/Store';
+import UserProvider from './Store/AppContext';
+
+import './App.css';
+
 
 
 function App() {
-
-  const{user} = useContext(Context)
-  console.log(user)
-
   return (
     <>
       <Router>
@@ -21,6 +23,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home /> } />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/store" element={UserProvider.admin === '1' ? <Store /> : <Home /> } />
+          <Route path='*' element={<Error />}/>
         </Routes>
         <Footer />
       </Router>
@@ -30,4 +35,3 @@ function App() {
 
 export default App;
 
-{/* <Route path="/" element={user.admin === '1' ? <Home /> : <Login /> } /> */}

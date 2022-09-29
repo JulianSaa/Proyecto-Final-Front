@@ -4,7 +4,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-
+        <div>
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,6 +42,7 @@ const Banner = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
+        </div>
         </div>
     )
 }

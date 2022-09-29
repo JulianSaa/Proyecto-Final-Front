@@ -17,16 +17,17 @@ const LoginContainer = () => {
         <>
             <form>
                 <div className="mb-3">
-                    <label className="form-label">Email address</label>
+                    <label className="form-label">Correo electronico</label>
                     <input value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    <div id="emailHelp" className="form-text">No compartiremos esta informacion con nadie</div>
                 </div>
                 <div className="mb-3">
-                    <label  className="form-label">Password</label>
+                    <label  className="form-label">Contraseña</label>
                     <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
-                <button onClick={onClick} type="submit" className="btn btn-primary">Submit</button>
-            </form></>
+                <button onClick={onClick} type="submit" className="btn btn-primary">Enviar</button>
+            </form>
+        </>
     )
 }
 
